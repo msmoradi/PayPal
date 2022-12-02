@@ -15,5 +15,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PayPal"
 include ':app'
+include (":feature:wallet")
+include (":feature:home")
+include (":feature:contacts")
+include (":feature:setting")
 include (":core:ui")
 include (":core:designsystem")
