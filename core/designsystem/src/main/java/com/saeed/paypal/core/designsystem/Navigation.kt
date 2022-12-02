@@ -7,6 +7,7 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 /**
@@ -44,6 +45,7 @@ fun RowScope.PayPalNavigationBarItem(
         label = label,
         alwaysShowLabel = alwaysShowLabel,
         colors = NavigationBarItemDefaults.colors(
+            indicatorColor = PayPalNavigationDefaults.navigationIndicatorColor(),
             selectedIconColor = PayPalNavigationDefaults.navigationSelectedItemColor(),
             unselectedIconColor = PayPalNavigationDefaults.navigationContentColor(),
             selectedTextColor = PayPalNavigationDefaults.navigationSelectedItemColor(),
@@ -76,6 +78,9 @@ fun PayPalNavigationBar(
  * PayPal navigation default values.
  */
 object PayPalNavigationDefaults {
+
+    @Composable
+    fun navigationIndicatorColor() = MaterialTheme.colorScheme.background
 
     @Composable
     fun navigationContentColor() = MaterialTheme.colorScheme.onBackground
