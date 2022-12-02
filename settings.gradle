@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Black Bank"
+rootProject.name = "PayPal"
 include ':app'
 include (":core:ui")
 include (":core:designsystem")

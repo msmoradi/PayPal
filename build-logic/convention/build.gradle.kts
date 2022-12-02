@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.saeed.blackbank.buildlogic"
+group = "com.saeed.paypal.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -17,31 +17,31 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplicationCompose") {
-            id = "blackbank.android.application.compose"
+            id = "paypal.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
         register("androidApplication") {
-            id = "blackbank.android.application"
+            id = "paypal.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "blackbank.android.library.compose"
+            id = "paypal.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "blackbank.android.library"
+            id = "paypal.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidFeature") {
-            id = "blackbank.android.feature"
+            id = "paypal.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
         register("androidTest") {
-            id = "blackbank.android.test"
+            id = "paypal.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
         register("androidHilt") {
-            id = "blackbank.android.hilt"
+            id = "paypal.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
     }

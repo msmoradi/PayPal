@@ -1,4 +1,4 @@
-package com.saeed.blackbank
+package com.saeed.paypal
 
 import com.android.build.api.artifact.SingleArtifact
 import com.android.build.api.variant.AndroidComponentsExtension

@@ -1,13 +1,13 @@
 plugins {
-    id("blackbank.android.library")
-    id("blackbank.android.library.compose")
+    id("paypal.android.library")
+    id("paypal.android.library.compose")
 }
 
 android {
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    namespace = "com.saeed.blackbank.core.designsystem"
+    namespace = "com.saeed.paypal.core.designsystem"
 }
 
 dependencies {

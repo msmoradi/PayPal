@@ -1,4 +1,4 @@
-package com.saeed.blackbank
+package com.saeed.paypal
 
 import org.junit.Test
 

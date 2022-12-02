@@ -1,14 +1,14 @@
 plugins {
-    id("blackbank.android.application")
-    id("blackbank.android.application.compose")
-    id("blackbank.android.hilt")
+    id("paypal.android.application")
+    id("paypal.android.application.compose")
+    id("paypal.android.hilt")
 }
 
 android {
-    namespace 'com.saeed.blackbank'
+    namespace 'com.saeed.paypal'
 
     defaultConfig {
-        applicationId "com.saeed.blackbank"
+        applicationId "com.saeed.paypal"
         versionCode 1
         versionName "1.0"
 

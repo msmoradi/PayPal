@@ -1,9 +1,9 @@
-package com.saeed.blackbank.core.designsystem.theme
+package com.saeed.paypal.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 
 /**
- * Black Bank colors.
+ * PayPal colors.
  */
 internal val Blue10 = Color(0xFF001F29)
 internal val Blue20 = Color(0xFF003544)

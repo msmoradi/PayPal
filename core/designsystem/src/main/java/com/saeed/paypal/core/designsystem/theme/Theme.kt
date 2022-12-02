@@ -1,4 +1,4 @@
-package com.saeed.blackbank.core.designsystem.theme
+package com.saeed.paypal.core.designsystem.theme
 
 import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast
@@ -146,24 +146,24 @@ val LightAndroidBackgroundTheme = BackgroundTheme(color = DarkGreenGray95)
 val DarkAndroidBackgroundTheme = BackgroundTheme(color = Color.Black)
 
 /**
- * Black Bank theme.
+ * PayPal theme.
  *
  * @param darkTheme Whether the theme should use a dark color scheme (follows system by default).
  * @param androidTheme Whether the theme should use the Android theme color scheme instead of the
  *        default theme. If this is `false`, then dynamic theming will be used when supported.
  */
 @Composable
-fun blackbankTheme(
+fun paypalTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
-) = blackbankTheme(
+) = paypalTheme(
     darkTheme = darkTheme,
     disableDynamicTheming = false,
     content = content
 )
 
 /**
- * Black Bank theme. This is an internal only version, to allow disabling dynamic theming
+ * PayPal theme. This is an internal only version, to allow disabling dynamic theming
  * in tests.
  *
  * @param darkTheme Whether the theme should use a dark color scheme (follows system by default).
@@ -173,7 +173,7 @@ fun blackbankTheme(
  *        supported. This parameter has no effect if [androidTheme] is `true`.
  */
 @Composable
-internal fun blackbankTheme(
+internal fun paypalTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     disableDynamicTheming: Boolean,
     content: @Composable () -> Unit
@@ -195,7 +195,7 @@ internal fun blackbankTheme(
     ) {
         MaterialTheme(
             colorScheme = colorScheme,
-            typography = BlackBankTypography,
+            typography = PayPalTypography,
             content = content
         )
     }

@@ -1,4 +1,4 @@
-package com.saeed.blackbank.core.ui
+package com.saeed.paypal.core.ui
 
 import androidx.compose.ui.tooling.preview.Preview
 

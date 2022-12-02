@@ -1,8 +1,8 @@
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
 import com.android.build.api.dsl.ApplicationExtension
-import com.saeed.blackbank.configureFlavors
-import com.saeed.blackbank.configureKotlinAndroid
-import com.saeed.blackbank.configurePrintApksTask
+import com.saeed.paypal.configureFlavors
+import com.saeed.paypal.configureKotlinAndroid
+import com.saeed.paypal.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

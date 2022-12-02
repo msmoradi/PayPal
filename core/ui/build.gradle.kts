@@ -1,10 +1,10 @@
 plugins {
-    id("blackbank.android.library")
-    id("blackbank.android.library.compose")
+    id("paypal.android.library")
+    id("paypal.android.library.compose")
 }
 
 android {
-    namespace = "com.saeed.blackbank.core.ui"
+    namespace = "com.saeed.paypal.core.ui"
 }
 
 dependencies {

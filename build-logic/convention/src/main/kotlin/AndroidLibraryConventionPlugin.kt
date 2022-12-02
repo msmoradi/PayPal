@@ -1,9 +1,9 @@
 import com.android.build.api.variant.AndroidComponentsExtension
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import com.saeed.blackbank.configureFlavors
-import com.saeed.blackbank.configureKotlinAndroid
-import com.saeed.blackbank.configurePrintApksTask
+import com.saeed.paypal.configureFlavors
+import com.saeed.paypal.configureKotlinAndroid
+import com.saeed.paypal.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension

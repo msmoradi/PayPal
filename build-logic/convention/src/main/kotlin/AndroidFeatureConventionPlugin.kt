@@ -11,13 +11,13 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply {
-                apply("blackbank.android.library")
-                apply("blackbank.android.hilt")
+                apply("paypal.android.library")
+                apply("paypal.android.hilt")
             }
             extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.saeed.blackbank.core.testing.NiaTestRunner"
+                        "com.saeed.paypal.core.testing.NiaTestRunner"
                 }
             }
 

@@ -1,4 +1,4 @@
-package com.saeed.blackbank.core.designsystem.theme
+package com.saeed.paypal.core.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -7,9 +7,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 /**
- * Black Bank typography.
+ * PayPal typography.
  */
-internal val BlackBankTypography = Typography(
+internal val PayPalTypography = Typography(
     displayLarge = TextStyle(
         fontWeight = FontWeight.W400,
         fontSize = 57.sp,

@@ -1,4 +1,4 @@
-package com.saeed.blackbank.ui.theme
+package com.saeed.paypal.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun BlackBankTheme(
+fun PayPalTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

@@ -1,4 +1,4 @@
-package com.saeed.blackbank.ui.theme
+package com.saeed.paypal.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
