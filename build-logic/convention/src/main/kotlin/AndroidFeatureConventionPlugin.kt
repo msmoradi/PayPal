@@ -17,7 +17,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.saeed.paypal.core.testing.NiaTestRunner"
+                        "com.saeed.paypal.core.testing.PayPalTestRunner"
                 }
             }
 

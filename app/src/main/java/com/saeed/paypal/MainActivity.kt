@@ -3,42 +3,31 @@ package com.saeed.paypal
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.saeed.paypal.ui.theme.PayPalTheme
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.runtime.DisposableEffect
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.saeed.paypal.core.designsystem.theme.PayPalTheme
+import com.saeed.paypal.ui.PayPalApp
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val systemUiController = rememberSystemUiController()
+            val darkTheme = isSystemInDarkTheme()
+
+            // Update the dark content of the system bars to match the theme
+            DisposableEffect(systemUiController, darkTheme) {
+                systemUiController.systemBarsDarkContentEnabled = !darkTheme
+                onDispose {}
+            }
+
             PayPalTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+                PayPalApp()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    PayPalTheme {
-        Greeting("Android")
     }
 }
