@@ -1,7 +1,6 @@
 plugins {
     id("blackbank.android.library")
     id("blackbank.android.library.compose")
-    id("blackbank.android.library.jacoco")
 }
 
 android {

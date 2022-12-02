@@ -195,7 +195,7 @@ internal fun blackbankTheme(
     ) {
         MaterialTheme(
             colorScheme = colorScheme,
-            typography = blackbankTypography,
+            typography = BlackBankTypography,
             content = content
         )
     }
