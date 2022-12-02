@@ -20,14 +20,14 @@ enum class TopLevelDestination(
         iconTextId = R.string.contacts_title,
         titleTextId = R.string.contacts_title
     ),
-    SETTING(
-        icon = Icon.DrawableResourceIcon(PayPalIcons.Setting),
-        iconTextId = R.string.setting_title,
-        titleTextId = R.string.setting_title
-    ),
     WALLET(
         icon = Icon.DrawableResourceIcon(PayPalIcons.Wallet),
         iconTextId = R.string.wallet_title,
         titleTextId = R.string.wallet_title
+    ),
+    SETTING(
+        icon = Icon.DrawableResourceIcon(PayPalIcons.Setting),
+        iconTextId = R.string.setting_title,
+        titleTextId = R.string.setting_title
     )
 }
