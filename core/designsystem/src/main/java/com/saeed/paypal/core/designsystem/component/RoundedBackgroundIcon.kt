@@ -1,5 +1,6 @@
 package com.saeed.paypal.core.designsystem.component
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
@@ -17,13 +18,13 @@ import com.saeed.paypal.core.designsystem.theme.PayPalTheme
 
 @Composable
 fun RoundedBackgroundIcon(
-    iconResId: Int,
+    @DrawableRes iconResId: Int,
     modifier: Modifier = Modifier
 ) {
     Box(
         modifier = modifier
             .background(
-                color = MaterialTheme.colorScheme.surface,
+                color = MaterialTheme.colorScheme.background,
                 shape = CircleShape
             )
             .padding(8.dp),
