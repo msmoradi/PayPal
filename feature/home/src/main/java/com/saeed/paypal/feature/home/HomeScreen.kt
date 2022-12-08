@@ -60,7 +60,8 @@ internal fun HomeScreen(
                 contentColor = MaterialTheme.colorScheme.background,
                 backgroundColors = listOf(
                     Color(0xFF0070BA), MaterialTheme.colorScheme.primary
-                )
+                ),
+                onItemClicked = {}
             )
             ActionItem(
                 modifier = Modifier.weight(2f),
@@ -69,7 +70,8 @@ internal fun HomeScreen(
                 contentColor = MaterialTheme.colorScheme.primary,
                 backgroundColors = listOf(
                     MaterialTheme.colorScheme.background, MaterialTheme.colorScheme.background
-                )
+                ),
+                onItemClicked = {}
             )
             MoreActionItem(
                 modifier = Modifier.weight(1f),

@@ -2,6 +2,7 @@ package com.saeed.paypal.feature.home
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,6 +25,7 @@ fun ActionItem(
     text: String,
     contentColor: Color,
     backgroundColors: List<Color> = emptyList(),
+    onItemClicked: () -> Unit
 ) {
     Box(
         modifier = modifier
@@ -35,6 +37,7 @@ fun ActionItem(
                     center = Offset.Zero
                 )
             )
+            .clickable(onClick = onItemClicked)
             .padding(8.dp)
     ) {
         Column {
