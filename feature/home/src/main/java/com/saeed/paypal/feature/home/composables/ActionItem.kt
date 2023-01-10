@@ -1,4 +1,4 @@
-package com.saeed.paypal.feature.home
+package com.saeed.paypal.feature.home.composables
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background

@@ -9,13 +9,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.paddingFromBaseline
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Check
-import androidx.compose.material.icons.rounded.Close
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -24,6 +18,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.saeed.paypal.core.designsystem.R
 import com.saeed.paypal.core.designsystem.theme.PayPalTheme
 import com.saeed.paypal.core.ui.DevicePreviews
+import com.saeed.paypal.feature.home.composables.ActionItem
+import com.saeed.paypal.feature.home.composables.ActivitySection
+import com.saeed.paypal.feature.home.composables.HomeAppBar
+import com.saeed.paypal.feature.home.composables.MoreActionItem
+import com.saeed.paypal.model.previewActivities
 
 @Composable
 internal fun HomeRoute(
@@ -77,52 +76,19 @@ internal fun HomeScreen(
                 modifier = Modifier.weight(1f),
             )
         }
-    }
-}
-
-@Composable
-fun HomeAppBar(
-    modifier: Modifier = Modifier
-) {
-    Column(
-        modifier
-    ) {
-        Row(
+        ActivitySection(
+            previewActivities,
             modifier = Modifier
+                .padding(horizontal = 32.dp, vertical = 24.dp)
                 .fillMaxWidth()
-                .paddingFromBaseline(top = 8.dp),
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            Icon(imageVector = Icons.Rounded.Check, contentDescription = null)
-            Icon(imageVector = Icons.Rounded.Close, contentDescription = null)
-        }
-
-        Text(
-            modifier = Modifier.paddingFromBaseline(top = 22.dp, bottom = 32.dp),
-            text = "Hello, Vadim!",
-            style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onPrimary
-        )
-
-        Text(
-            text = "$ 272.30",
-            style = MaterialTheme.typography.headlineLarge,
-            color = MaterialTheme.colorScheme.onPrimary
-        )
-
-        Text(
-            modifier = Modifier.paddingFromBaseline(top = 4.dp),
-            text = "Your Balance",
-            style = MaterialTheme.typography.titleSmall,
-            color = MaterialTheme.colorScheme.onPrimary
         )
     }
 }
 
 @DevicePreviews
 @Composable
-fun HomeAppBarPreview() {
+fun HomeScreenPreview() {
     PayPalTheme {
-        HomeAppBar()
+        HomeScreen()
     }
 }
