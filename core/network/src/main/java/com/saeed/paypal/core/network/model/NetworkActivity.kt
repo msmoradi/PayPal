@@ -1,6 +1,5 @@
 package com.saeed.paypal.core.network.model
 
-import com.saeed.paypal.core.model.data.Topic
 import kotlinx.serialization.Serializable
 
 @Serializable
