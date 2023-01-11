@@ -19,7 +19,6 @@ fun MoreActionItem(
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
-            .fillMaxSize()
             .background(
                 shape = MaterialTheme.shapes.extraLarge,
                 color = MaterialTheme.colorScheme.background
