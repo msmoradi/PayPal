@@ -18,9 +18,9 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.saeed.paypal.core.designsystem.theme.PayPalTheme
 import com.saeed.paypal.core.ui.DevicePreviews
-import com.saeed.paypal.model.ActivityModel
-import com.saeed.paypal.model.AmountStatus
-import com.saeed.paypal.model.previewActivities
+import com.saeed.paypal.core.model.ActivityModel
+import com.saeed.paypal.core.model.AmountStatus
+import com.saeed.paypal.core.model.previewActivities
 
 @Composable
 fun ActivityRow(

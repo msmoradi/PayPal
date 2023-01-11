@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.saeed.paypal.core.designsystem.theme.PayPalTheme
 import com.saeed.paypal.core.ui.DevicePreviews
-import com.saeed.paypal.model.ActivityModel
-import com.saeed.paypal.model.previewActivities
+import com.saeed.paypal.core.model.ActivityModel
+import com.saeed.paypal.core.model.previewActivities
 
 @Composable
 fun ActivitySection(

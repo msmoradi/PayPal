@@ -1,4 +1,4 @@
-package com.saeed.paypal.model
+package com.saeed.paypal.core.model
 
 data class ContactModel(
     val name: String,
