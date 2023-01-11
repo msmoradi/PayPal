@@ -1,4 +1,4 @@
-package com.saeed.paypal.model
+package com.saeed.paypal.core.model
 
 data class ActivityModel(
     val title: String,
@@ -10,7 +10,18 @@ data class ActivityModel(
 
 enum class AmountStatus {
     POSITIVE,
-    NEGATIVE
+    NEGATIVE;
+
+    companion object {
+
+        fun map(int: Int): AmountStatus {
+            return when (int) {
+                0 -> POSITIVE
+                1 -> NEGATIVE
+                else -> POSITIVE
+            }
+        }
+    }
 }
 
 val previewActivities = listOf(
