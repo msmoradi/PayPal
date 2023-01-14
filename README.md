@@ -31,7 +31,7 @@ The **PayPal Sample App** follows the [official architecture guidance](https://d
 - [x] Build clean architecture bases
 - [x] Core modules like designsystem, common, network, etc.
 - [x] Fake api response
-- [ ] Home Screen
+- [x] Home Screen
 - [ ] Activity Screen
 - [ ] Send Money Screen
 - [ ] Contacts Screen
