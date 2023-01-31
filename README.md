@@ -1,4 +1,4 @@
-## PayPay Redesigned App
+## PayPal Redesigned App
 
 A sample banking app that showcases Clean architecture approach with [Jetpack Compose](https://developer.android.com/jetpack/compose) in Android.
 The design is inspired from [dribbble](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept?utm_source=Clipboard_Shot&utm_campaign=vdemenko&utm_content=PayPal%20App%20Redesign%20Conept&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=vdemenko&utm_content=PayPal%20App%20Redesign%20Conept&utm_medium=Social_Share).
